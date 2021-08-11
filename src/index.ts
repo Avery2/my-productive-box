@@ -36,6 +36,8 @@ interface IRepo {
       owner: repoInfo?.owner?.login,
     }));
 
+  console.log({repos})
+
   /**
    * Third, get commit time and parse into commit-time/hour diagram
    */
@@ -71,6 +73,8 @@ interface IRepo {
    */
   const sum = morning + daytime + evening + night;
   if (!sum) return;
+
+  console.log({sum})
 
   const oneDay = [
     { label: '🌞 Morning', commits: morning },
